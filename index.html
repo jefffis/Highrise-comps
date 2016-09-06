@@ -152,7 +152,7 @@
 									<input type="checkbox" class="app-tasklist-checkbox" id="app-tasks-multiple-manage" value="1" />
 									<span class="app-tasklist-checkbox-ui"></span>
 									<span class="app-tasklist-label-text">
-										Edit Multiple
+										Bulk Edit
 									</span>
 								</label>
 
@@ -160,9 +160,10 @@
 									<fieldset>
 										<select id="app-multiple-edit-options" _style="display: none;">
 											<option value="delete" selected>Delete</option>
+											<option value="archive">Change</option>
 											<option value="archive">Ongoing</option>
 										</select>
-										<button type="button" id="app-bulk-submit-button" class="app-bulk-submit-button">Apply</button>
+										<button type="button" disabled id="app-bulk-submit-button" class="app-bulk-submit-button">Apply</button>
 									</fieldset>
 								</form>
 

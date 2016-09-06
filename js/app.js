@@ -127,7 +127,7 @@ $(function() {
 		// 	showEmptyParent(thisParent);
 		// }
 
-		$(this).prop('disabled', true);
+		$(this).prop('disabled', true).addClass('submitted');
 
 		$('.bulk-edited').each(function() {
 			$(this).addClass('edited');
@@ -148,6 +148,7 @@ $(function() {
 				thisCheckbox.prop('checked', true);
 				$(this).addClass('bulk-edited');
 			}
+			toggleBulkEditButton($('.bulk-edited').length);
 		}
 	});
 
@@ -222,7 +223,7 @@ $(function() {
 		}, 250);
 		setTimeout(function() {
 			el.remove();
-			$('#app-bulk-submit-button').prop('disabled', false);
+			$('#app-bulk-submit-button').removeClass('submitted');
 		}, 1000);
 	}
 
@@ -236,6 +237,14 @@ $(function() {
 		setTimeout(function() {
 			el.addClass('empty');
 		}, 1000);
+	}
+
+	function toggleBulkEditButton(num) {
+		if(num > 0) {
+			$('#app-bulk-submit-button').prop('disabled', false);
+		}else{
+			$('#app-bulk-submit-button').prop('disabled', true);
+		}
 	}
 
 });
