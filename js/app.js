@@ -23,7 +23,7 @@ $(function() {
 		successDeletedMulti = '<div id="success" class="removable"><p>These tasks have been deleted. <button type="button" class="app-success-button-undo">Undo</button> <button type="button" class="app-success-button-hide">Hide</button></p></div>',
 		changeBox = '<div id="edit-item"><span></span></div>',
 		manageScrollTop = $('#app-tasks-manage').offset().top,
-		manageHeight = $('#app-tasks-manage').outerHeight();
+		manageHeight = $('#app-tasks-manage').outerHeight() - 10;
 
 	$(window).scroll(function() {
 		var scrollTop = $(this).scrollTop(),
@@ -37,6 +37,11 @@ $(function() {
             $('#app-tasks-manage').addClass('sticky');
             $('#app-tasks-manage-container').css({'width': innerWidth});
             $('#app-overdue-tasks-container').css({'padding-top': manageHeight});
+
+			$(window).resize(function() {
+				$('#app-tasks-manage-container').css({'width': innerWidth});
+			});
+
         } else if (scrollTop <= manageScrollTop) {
             $('#app-tasks-manage').removeClass('sticky');
             $('#app-tasks-manage-container').removeAttr('style');

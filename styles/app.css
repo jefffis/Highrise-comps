@@ -125,7 +125,7 @@ hr {
 #app-main {
 	float: left;
 	min-height: 500px;
-	width: calc(100% - (175px + 1.5rem));
+	width: calc(100% - (190px + 1.5rem));
 	background: white;
 	padding: 1rem 2rem 2rem;
 	border: 1px solid rgba(0, 0, 0, 0.1);
@@ -145,6 +145,13 @@ hr {
 }
 #app-main-nav {
 	float: right;
+	padding-top: .25rem;
+	color: #999;
+}
+#app-main-nav span {
+	display: inline-block;
+	font-size: 13px;
+	vertical-align: middle;
 }
 .app-main-nav-item,
 .app-main-nav-item--active,
@@ -158,13 +165,16 @@ hr {
 .app-main-nav-item--select {
 	background: white url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-128.png) no-repeat calc(100% - 5px) 55%;
 	background-size: 12px;
-	margin: 8px 0 0 1rem;
+	margin-left: .25rem;
 	padding: .125em 1.5rem .125em .25rem;
 	border: 1px solid #ddd;
 	border-radius: 2px;
 	font-size: 13px;
 	line-height: 1.5;
 	-webkit-appearance: none;
+}
+.app-main-nav-item--select:nth-of-type(1) {
+	margin-right: .25rem;
 }
 .app-main-nav-item--active {
 	color: inherit;
@@ -362,7 +372,7 @@ hr {
 }
 .sticky #app-tasks-manage-container {
 	position: relative;
-	left: -7px;
+	left: -14px;
 	background: white;
 	margin: auto;
 	/*padding: .75rem 0;*/
@@ -391,6 +401,7 @@ hr {
 	margin-right: 1.5rem;
 }
 #app-multiple-edit-options {
+	/*max-width: 70px;*/
 	background: white url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-128.png) no-repeat calc(100% - 5px) 55%;
 	background-size: 12px;
 	padding: .125em 1.5rem .125em .25rem;
@@ -426,13 +437,20 @@ hr {
 .app-filter-button {
 	outline: none;
 }
+/*.app-filter-button:after {
+	display: inline-block;
+	margin-left: .5rem;
+	content: attr(data-num);
+	font-size: 11px;
+	vertical-align: middle;
+}*/
 .app-filter-button:active {
 	opacity: .65;
 }
 .app-filter-button.active {
-	background: #efefef;
-	border-color: #efefef;
-	color: #999;
+	background: #2c6492;
+	border-color: #2c6492;
+	color: white;
 }
 .app-filter-label {
 	display: inline-block;
@@ -861,7 +879,7 @@ hr {
 
 #app-main-sidebar {
 	float: right;
-	width: 175px;
+	width: 190px;
 	padding-top: 1rem;
 }
 #app-main-sidebar h4 {
