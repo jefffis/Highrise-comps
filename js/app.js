@@ -99,6 +99,14 @@ $(function() {
 
 	});
 
+	$('.js-show-ongoing-tab').on('click', function() {
+		$('.app-tasks').hide();
+		$('button', '#app-tasks-tab-bar').removeClass('app-inline-button--active').addClass('app-inline-button');
+		$('button[data-url="'+ $(this).attr('href') +'"]', '#app-tasks-tab-bar').addClass('app-inline-button--active').removeAttr('data-new');
+		$('#' + $(this).data('tab')).show();
+		window.history.pushState('', '', $(this).data('url'));
+	});
+
 	$('.app-tasklist-checkbox').on('click', function() {
 		var thisItem = $(this).parents('li');
 

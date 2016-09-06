@@ -390,12 +390,19 @@ hr {
 	content: "";
 }
 #app-tasks-manage-form {
-	display: none;
+	display: inline-block;
+	visibility: hidden;
+	/*width: 1px;*/
+	/*overflow: hidden;*/
 	margin-right: 1.5rem;
 	margin-left: -.5rem;
 }
 #app-tasks-manage-form.show {
-	display: inline-block;
+	/*display: inline-block;*/
+	/*opacity: 1;*/
+	visibility: visible;
+	/*width: auto;*/
+	/*overflow: auto;*/
 }
 #app-multiple-edit {
 	margin-right: 1.5rem;

@@ -21,40 +21,16 @@
 		</header>
 
 		<section class="app-min-max-width cf">
-			
-			<!-- <div id="app-main-intro-new">
-				<h3>
-					Introducing Ongoing Tasks
-				</h3>
-				<p>
-					Made specifically to help reduce your Overdue tasks. We like to think of Ongoing tasks as ones that important enough to not forget about them, but also not important to just bog down your Overdue task list.
-				</p>
-			</div> -->
 
 			<div id="app-main-wrapper">
 				
 				<main role="main" id="app-main">
-
-					<!-- <div id="app-new-feature">
-
-						<h3>
-							Introducing Ongoing Tasks
-						</h3>
-						<p>
-							We made Ongoing tasks specifically to help reduce your Overdue tasks. We like to think of Ongoing tasks as ones that important enough to not forget about or to delete, but also not important to just bog down your day-to-day. If you get around to it today, great. If not, no big deal.
-						</p>
-
-					</div> -->
 					
 					<div id="app-main-header" class="cf">
 						<h1 id="app-main-title">
 							Upcoming Tasks
 						</h1>
 						<nav id="app-main-nav">
-							<!-- <a href="###" class="app-main-nav-item--active">Upcoming</a>
-							<a href="###" class="app-main-nav-item">Assigned</a>
-							<a href="###" class="app-main-nav-item">Completed</a> -->
-							<!-- <a href="###" class="app-main-nav-item--settings">Settings</a> -->
 							<span>Viewing</span>
 							<select class="app-main-nav-item--select">
 								<option value="upcoming">Upcoming</option>
@@ -78,79 +54,8 @@
 						<button type="button" data-tab="app-nextweek-tasks-container" data-url="#nextweek" class="app-inline-button">Next Week</button>
 						<button type="button" data-tab="app-later-tasks-container" data-url="#later" class="app-inline-button">Later</button>
 						<button type="button" data-tab="app-ongoing-tasks-container" data-url="#ongoing" class="app-inline-button" data-new>Ongoing</button>
-						<!-- <div class="app-tasks-filter-button-wrapper">
-							<button type="button" class="app-tasks-filter-button">Filter</button>
-							<form method="post" class="app-tasks-filter">
-								
-								<fieldset>
-
-										<label class="app-label--inline">
-											<input type="checkbox" class="app-tasklist-checkbox" value="1" />
-											<span class="app-tasklist-checkbox-ui"></span>
-											<span class="app-tasklist-item-category--inline">
-												Email
-											</span>
-										</label>
-										<hr class="app-hr-min" />
-										<label class="app-label--inline">
-											<input type="checkbox" class="app-tasklist-checkbox" value="1" />
-											<span class="app-tasklist-checkbox-ui"></span>
-											<span class="app-tasklist-item-category--inline">
-												Fax
-											</span>
-										</label>
-										<hr class="app-hr-min" />
-										<label class="app-label--inline">
-											<input type="checkbox" class="app-tasklist-checkbox" value="1" />
-											<span class="app-tasklist-checkbox-ui"></span>
-											<span class="app-tasklist-item-category--inline">
-												Call
-											</span>
-										</label>
-										<hr class="app-hr-min" />
-										<label class="app-label--inline">
-											<input type="checkbox" class="app-tasklist-checkbox" value="1" />
-											<span class="app-tasklist-checkbox-ui"></span>
-											<span class="app-tasklist-item-category--inline">
-												Ship
-											</span>
-										</label>
-										<hr class="app-hr-min" />
-										<label class="app-label--inline">
-											<input type="checkbox" class="app-tasklist-checkbox" value="1" />
-											<span class="app-tasklist-checkbox-ui"></span>
-											<span class="app-tasklist-item-category--inline">
-												Lunch
-											</span>
-										</label>
-
-										<hr />
-
-										<button type="button" class="app-form-submit">Apply</button>
-
-									</fieldset>
-
-								</form>
-						</div> -->
 						
-					</div>
-
-					<!-- <div id="app-tasks-filter">
-						<button type="button" class="app-tasks-filter-button">Filter Tasks</button>
-					</div> -->
-
-					<!-- <form method="POST" id="app-tasks-search">
-						<fieldset>
-							<label class="app-task-search-label">
-								Search tasks by category
-								<input type="search" class="app-task-search-input" />
-							</label>
-						</fieldset>
-					</form> -->
-
-					<!-- <hr /> -->
-
-					
+					</div>					
 
 					<div class="app-tasks app-tasks--overdue" id="app-overdue-tasks-container">
 
@@ -177,6 +82,7 @@
 
 								<div id="app-filter-buttons">
 									<span class="app-filter-label">Filter:</span>
+									<button type="button" class="app-filter-button js-filter-tasks" data-tasks="critical-tasks" data-num="1234">Critical</button>
 									<button type="button" class="app-filter-button js-filter-tasks" data-tasks="email-tasks" data-num="1234">Email</button>
 									<button type="button" class="app-filter-button js-filter-tasks" data-tasks="fax-tasks" data-num="15">Fax</button>
 									<button type="button" class="app-filter-button js-filter-tasks" data-tasks="call-tasks" data-num="97">Call</button>
@@ -186,6 +92,88 @@
 						</div>
 
 						<hr />
+
+						<div id="critical-tasks" class="app-task-container">
+							<h2 class="app-overdue-tasks">Critical</h2>
+							<ul class="app-tasklist" data-tasks="3">
+								<li class="app-tasklist-item--critical cf">
+									<label class="app-tasklist-label">
+										<input type="checkbox" class="app-tasklist-checkbox" value="1" />
+										<span class="app-tasklist-checkbox-ui"></span>
+									</label>
+									<div class="app-tasklist-item-body-wrapper">
+										<span class="app-tasklist-item-category">
+											Email
+										</span>
+										<span class="app-tasklist-item-category--high">
+											High
+										</span>
+										<span class="app-tasklist-item-body">
+											<strong class="app-tasklist-item-due-date">Aug 31</strong>,
+											3:45pm &ndash; Some taskname
+											&nbsp;
+											(Re: <a href="###">Email about Joe Jonas</a>)
+										</span>
+									</div>
+									<div class="app-tasklist-options">
+										<button type="button" class="app-tasklist-options-button--delete  js-delete-task"></button>
+										<button type="button" class="app-tasklist-options-button js-open-change-modal">Change</button>
+										<button type="button" class="app-tasklist-options-button--archive js-move-to-ongoing">Ongoing</button>
+									</div>
+								</li>
+								<li class="app-tasklist-item--critical cf">
+									<label class="app-tasklist-label">
+										<input type="checkbox" class="app-tasklist-checkbox" value="1" />
+										<span class="app-tasklist-checkbox-ui"></span>
+									</label>
+									<div class="app-tasklist-item-body-wrapper">
+										<span class="app-tasklist-item-category">
+											Fax
+										</span>
+										<span class="app-tasklist-item-category--high">
+											High
+										</span>
+										<span class="app-tasklist-item-body">
+											<strong class="app-tasklist-item-due-date">Aug 31</strong>,
+											3:45pm &ndash; Some taskname
+											&nbsp;
+											(Re: <a href="###">Email about Joe Jonas</a>)
+										</span>
+									</div>
+									<div class="app-tasklist-options">
+										<button type="button" class="app-tasklist-options-button--delete  js-delete-task"></button>
+										<button type="button" class="app-tasklist-options-button js-open-change-modal">Change</button>
+										<button type="button" class="app-tasklist-options-button--archive js-move-to-ongoing">Ongoing</button>
+									</div>
+								</li>
+								<li class="app-tasklist-item--critical cf">
+									<label class="app-tasklist-label">
+										<input type="checkbox" class="app-tasklist-checkbox" value="1" />
+										<span class="app-tasklist-checkbox-ui"></span>
+									</label>
+									<div class="app-tasklist-item-body-wrapper">
+										<span class="app-tasklist-item-category">
+											Lunch
+										</span>
+										<span class="app-tasklist-item-category--high">
+											High
+										</span>
+										<span class="app-tasklist-item-body">
+											<strong class="app-tasklist-item-due-date">Aug 31</strong>,
+											3:45pm &ndash; Some taskname
+										</span>
+									</div>
+									<div class="app-tasklist-options">
+										<button type="button" class="app-tasklist-options-button--delete  js-delete-task"></button>
+										<button type="button" class="app-tasklist-options-button js-open-change-modal">Change</button>
+										<button type="button" class="app-tasklist-options-button--archive js-move-to-ongoing">Ongoing</button>
+									</div>
+								</li>
+							</ul>
+							
+							<hr />
+
+						</div>
 
 						<div id="email-tasks" class="app-task-container">
 							<h2 class="app-overdue-tasks--normal">Email</h2>
@@ -1084,7 +1072,7 @@
 									</span>
 								</div>
 								<div class="app-tasklist-options--short">
-									<button type="button" class="app-tasklist-options-button--delete  js-delete-task"></button>
+									<button type="button" class="app-tasklist-options-button--delete js-delete-task"></button>
 									<button type="button" class="app-tasklist-options-button js-open-change-modal">Change</button>
 								</div>
 							</li>
@@ -1144,8 +1132,6 @@
 							</li>
 						</ul>
 					</div>
-
-					<!-- <hr /> -->
 
 					<div class="app-tasks" id="app-later-tasks-container" style="display: none;">
 						<h2 id="app-later-tasks" class="app-tasks-toggle">Later</h2>
@@ -1225,20 +1211,17 @@
 					<p>
 						You&rsquo;re at <strong><span class="app-high-capacity">67% capacity</span></strong> of tasks. <a href="###">What does this mean?</a>
 					</p>
-					<!-- <p>
-						We realize there&rsquo;s only so much time in a day. We want to use technology to help maximize your efficiency.
-					</p> -->
 					<div class="app-main-sidebar-note removable">
-						<p><strong>Too much overdue?</strong> Checkout our new <a href="###">Ongoing</a> tasks to help manage some of your Overdue items.</p>
+						<p><strong>Too much overdue?</strong> Checkout our new <a href="#ongoing" data-tab="app-ongoing-tasks-container" data-url="#ongoing" class="js-show-ongoing-tab">Ongoing</a> tasks to help manage some of your Overdue items.</p>
 						<p><button type="button" class="app-success-button-hide">Hide this</button></p>
 					</div>
 					<hr />
 					<h4>
 						Did you know:
 					</h4>
-					<p>You can create tasks via email by using your <a href="/users/1235080/edit#email_dropbox">create-a-task-by-email</a> dropbox addresses.</p>
+					<p>You can create tasks via email by using your <a href="#/users/1235080/edit#email_dropbox">create-a-task-by-email</a> dropbox addresses.</p>
 					<p>
-						 <a href="/tasks/subscription">Subscribe to your task feed</a> to see Highrise tasks in OS X Calendar,
+						 <a href="#/tasks/subscription">Subscribe to your task feed</a> to see Highrise tasks in OS X Calendar,
 Outlook, or any other app that supports the ICS format.
 					</p>
 				</aside>
@@ -1287,66 +1270,6 @@ Outlook, or any other app that supports the ICS format.
 			</aside>
 
 		</section>
-
-		<!-- <div id="app-modal-wrapper" class="show">
-			<div id="app-modal-container">
-				<div id="app-modal-content">
-					<form method="post">
-						<fieldset>
-							
-							<h3>Filter tasks by Category:</h3>
-
-							<label class="app-label--inline">
-								<input type="checkbox" class="app-tasklist-checkbox" value="1" />
-								<span class="app-tasklist-checkbox-ui"></span>
-								<span class="app-tasklist-item-category--inline">
-									Email
-								</span>
-							</label>
-							<hr class="app-hr-min" />
-							<label class="app-label--inline">
-								<input type="checkbox" class="app-tasklist-checkbox" value="1" />
-								<span class="app-tasklist-checkbox-ui"></span>
-								<span class="app-tasklist-item-category--inline">
-									Fax
-								</span>
-							</label>
-							<hr class="app-hr-min" />
-							<label class="app-label--inline">
-								<input type="checkbox" class="app-tasklist-checkbox" value="1" />
-								<span class="app-tasklist-checkbox-ui"></span>
-								<span class="app-tasklist-item-category--inline">
-									Call
-								</span>
-							</label>
-							<hr class="app-hr-min" />
-							<label class="app-label--inline">
-								<input type="checkbox" class="app-tasklist-checkbox" value="1" />
-								<span class="app-tasklist-checkbox-ui"></span>
-								<span class="app-tasklist-item-category--inline">
-									Ship
-								</span>
-							</label>
-							<hr class="app-hr-min" />
-							<label class="app-label--inline">
-								<input type="checkbox" class="app-tasklist-checkbox" value="1" />
-								<span class="app-tasklist-checkbox-ui"></span>
-								<span class="app-tasklist-item-category--inline">
-									Lunch
-								</span>
-							</label>
-
-							<hr />
-
-							<button type="button" class="app-form-submit">Apply Filters</button>
-
-						</fieldset>
-
-					</form>
-				</div>
-			</div>
-		</div>
-		<div id="app-modal-bg" class="show"></div> -->
 
 		<script src="js/app.js" async></script>
 		
