@@ -87,12 +87,6 @@ hr {
 	clear: both;
 	height: 30px;
 }
-.app-hr-min {
-	height: 10px;
-}
-.app-float-right {
-	float: right;
-}
 
 /*** header ***/
 #app-header {
@@ -153,9 +147,7 @@ hr {
 	font-size: 13px;
 	vertical-align: middle;
 }
-.app-main-nav-item,
-.app-main-nav-item--active,
-.app-main-nav-item--settings,
+
 .app-main-nav-item--select {
 	display: inline-block;
 	padding-top: .5rem;
@@ -176,12 +168,12 @@ hr {
 .app-main-nav-item--select:nth-of-type(1) {
 	margin-right: .25rem;
 }
-.app-main-nav-item--active {
+/*.app-main-nav-item--active {
 	color: inherit;
 	cursor: default;
 	text-decoration: none;
-}
-#app-main-nav a:nth-of-type(n+2) {
+}*/
+/*#app-main-nav a:nth-of-type(n+2) {
 	margin-left: 1rem;
 }
 .app-main-nav-item--settings {
@@ -198,35 +190,25 @@ hr {
 	background: #ddd;
 	margin-top: -.2rem;
 	content: "";
-}
-
-#app-main-subtext {
+}*/
+/*#app-main-subtext {
 	display: block;
 	margin: .5rem 0 1rem;
 	font-size: 13px;
 }
 #app-main-subtext u {
 	color: blue;
-}
+}*/
 
 /** app tasks tab bar ***/
 #app-tasks-tab-bar {
 	margin: 0 -2rem 1.5rem;
-	/*padding: 1rem 2rem;*/
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	color: #999;
 	font-size: 13px;
-	/*text-align: center;*/
 }
-/*#app-tasks-tab-bar span {
-	display: inline-block;
-	float: left;
-	margin-right: .5rem;
-	padding: .25rem .5rem .25rem 0;
-	vertical-align: middle;
-}*/
 .app-inline-button,
 .app-inline-button--active,
 .app-tasks-filter-button {
@@ -287,30 +269,19 @@ hr {
 	display: inline-block;
 	position: relative;
 	left: 1px;
-	/*display: block;
-	position: absolute;
-	top: .5rem;
-	right: 0;
-	height: 1em;
-	background: white;
-	margin-top: -.5em;
-	margin-left: -.5rem;
-	padding: .125rem .25rem;*/
 	margin-top: -.125rem;
 	margin-left: .25rem;
 	margin-right: -.125rem;
 	color: orange;
 	content: "New";
 	font-size: 10px;
-	/*line-height: 1;*/
 	vertical-align: middle;
 }
 
-#app-tasks-filter {
+/*#app-tasks-filter {
 	float: right;
-	/*margin: -2.8rem 0 0;*/
 	text-align: center;
-}
+}*/
 /*.app-tasks-filter-button {
 	background: white;
 	padding: .25rem .5rem;
@@ -323,7 +294,7 @@ hr {
 	display: block;
 	max-width: 20px;
 }*/
-.app-tasks-filter-button-wrapper {
+/*.app-tasks-filter-button-wrapper {
 	position: relative;
 	float: right;
 }
@@ -350,7 +321,7 @@ hr {
 }
 .app-tasks-filter-button:active {
 	opacity: .65;
-}
+}*/
 
 #app-overdue-tasks-container {
 	margin-top: -1rem;
@@ -375,8 +346,6 @@ hr {
 	left: -14px;
 	background: white;
 	margin: auto;
-	/*padding: .75rem 0;*/
-	/*border-bottom: 1px solid rgba(0, 0, 0, 0.05);*/
 }
 .sticky #app-tasks-manage-container:after {
 	display: block;
@@ -494,7 +463,7 @@ hr {
 }
 
 /*** show filters UI ***/
-.app-tasks-filter {
+/*.app-tasks-filter {
 	display: none;
 	position: absolute;
 	top: calc(100% + 3px);
@@ -526,13 +495,10 @@ hr {
 .app-tasks-filter:after {
 	top: -9px;
 	border-bottom-color: white;
-}
+}*/
 
-#app-tasks-search {
-	/*float: right;*/
+/*#app-tasks-search {
 	margin: -1rem 0 2rem;
-	/*padding: 0 0 .5rem;*/
-	/*border-bottom: 1px solid #ddd;*/
 	text-align: right;
 }
 .app-task-search-label {
@@ -541,20 +507,17 @@ hr {
 }
 .app-task-search-input {
 	display: inline-block;
-	/*margin-top: .35rem;*/
 	margin-left: .5rem;
 	padding: .35rem .5rem;
 	border: 1px solid #ddd;
 	border-radius: 3px;
-}
+}*/
 
 /*** app overdue tasks ***/
 .app-overdue-tasks,
 .app-overdue-tasks--normal {
 	margin-bottom: .25rem;
 	color: red;
-	/*font-size: 15px;*/
-	/*font-weight: bold;*/
 }
 .app-overdue-tasks--normal {
 	color: inherit;
@@ -672,7 +635,6 @@ hr {
 	width: 20px;
 }
 .app-label--inline {
-	/*display: block;*/
 	cursor: pointer;
 }
 .app-label--inline:nth-of-type(n+2) {
@@ -703,7 +665,7 @@ hr {
 	/*vertical-align: middle;*/
 }
 .app-tasklist-checkbox-ui:active {
-	opacity: .65;
+	opacity: .5;
 }
 .app-tasklist-checkbox:checked + .app-tasklist-checkbox-ui {
 	background: #008eec url(https://d1a993iq9azmzq.cloudfront.net/images/checkmark.svg) no-repeat center;
@@ -944,7 +906,6 @@ hr {
 .app-sidenav-link--active {
 	position: relative;
 	background: white;
-	/*background: -webkit-gradient(linear, left top, right top, from(transparent), to(white));*/
 	font-weight: bold;
 }
 .app-sidenav-link--active:before {
@@ -975,7 +936,6 @@ hr {
 	font-size: 11px;
 	font-weight: normal;
 }
-
 .app-main-sidebar-note {
 	background: #f9edbe;
 	margin: 2rem 0 0;
@@ -1014,7 +974,7 @@ hr {
 	margin: 0;
 }
 
-#app-main-intro-new {
+/*#app-main-intro-new {
 	position: relative;
 	left: calc(-2rem + 4px);
 	width: calc(100% - (185px + 2rem) - (175px));
@@ -1024,13 +984,13 @@ hr {
 	border-radius: 3px;
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.125) inset,
 	2px 2px 0 rgba(0, 0, 0, 0.075);
-}
+}*/
 /*#app-main-intro-new p {
 	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
 }*/
-#app-new-feature {
+/*#app-new-feature {
 	background: #E8F5FF;
 	margin: -1rem -2rem 1rem;
 	padding: 1rem 2rem;
@@ -1039,7 +999,7 @@ hr {
 }
 #app-new-feature h3 {
 	margin-bottom: .5rem;
-}
+}*/
 
 
 #edit-item {
@@ -1078,7 +1038,7 @@ hr {
 }
 
 /*** modals ***/
-#app-modal-bg {
+/*#app-modal-bg {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -1151,14 +1111,11 @@ hr {
 }
 .app-form-submit {
 	outline: none;
-	/*background: #326c9c;
-	background: -webkit-gradient(linear, left top, left bottom, from(#326c9c), to(#2c6492));*/
 	background: #efefef;
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.0125)), to(rgba(0, 0, 0, 0.05)));
 	padding: .5rem 1rem;
 	border-radius: 4px;
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.075) inset;
-	/*color: white;*/
 	cursor: pointer;
 	font-size: 14px;
 	font-weight: bold;
@@ -1169,5 +1126,5 @@ hr {
 .app-form-submit:active {
 	background: rgba(0, 0, 0, 0.075);
 	color: #555;
-}
+}*/
 
