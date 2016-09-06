@@ -768,6 +768,7 @@ hr {
 	padding: .6rem 0;
 	color: red;
 	cursor: pointer;
+	line-height: 1.2;
 	text-decoration: underline;
 	vertical-align: middle;
 }
