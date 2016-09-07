@@ -724,7 +724,7 @@ hr {
 	padding-left: .75rem;
 	border: 1px solid #ddd;
 	border-right: 0;
-	border-radius: 3px 0 0 3px;
+	border-radius: 20px 0 0 20px;
 	font-size: 12px;
 }
 .app-tasklist-options--short {
