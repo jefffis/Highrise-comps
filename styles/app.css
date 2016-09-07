@@ -63,7 +63,7 @@ h1 {
 h2 {
 	margin-bottom: .25rem;
 	color: #111;
-	font-size: 17px;
+	font-size: 15px;
 }
 h3 {
 	font-weight: bold;
@@ -522,6 +522,14 @@ hr {
 .app-overdue-tasks--normal {
 	color: inherit;
 }
+/*.app-overdue-tasks:before,
+.app-overdue-tasks--normal:before {
+	content: "Your ";
+}
+.app-overdue-tasks:after,
+.app-overdue-tasks--normal:after {
+	content: " Tasks";
+}*/
 
 /*.app-tasks h2 {
 	position: relative;
@@ -873,8 +881,12 @@ hr {
 	top: 0;
 	left: 0;
 	height: 6px;
+	width: 10%;
 	background: red;
 	border-radius: 3px 0 0 3px;
+
+	animation: grow .5s ease-in-out;
+	/*animation-delay: 1s;*/
 }
 .app-high-capacity {
 	color: red;

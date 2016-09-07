@@ -9,6 +9,19 @@
 
 		<link rel="stylesheet" href="styles/app.css" />
 
+		<style>
+			@keyframes grow {
+				0% {
+					width: 10%;
+					background: rgba(0, 0, 0, 0.15);
+				}
+				100% {
+					width: 67%;
+					background: red;
+				}
+			}
+		</style>
+
 	</head>
 	<body>
 
@@ -74,6 +87,7 @@
 										<select id="app-multiple-edit-options">
 											<option value="delete" selected>Delete</option>
 											<option value="archive">Change</option>
+											<option value="archive">Re-assign</option>
 											<option value="archive">Ongoing</option>
 										</select>
 										<button type="button" disabled id="app-bulk-submit-button" class="app-bulk-submit-button">Apply</button>
@@ -979,7 +993,7 @@
 					<!-- <hr /> -->
 
 					<div class="app-tasks" id="app-today-tasks-container" style="display: none;">
-						<h2 id="app-today-tasks" class="app-tasks-toggle">Today</h2>
+						<h2 id="app-today-tasks" class="app-tasks-toggle">Today&rsquo;s Tasks</h2>
 						<ul class="app-tasklist" data-tasks="8">
 							<li class="app-tasklist-item cf">
 								<label class="app-tasklist-label">
@@ -1082,7 +1096,7 @@
 					<!-- <hr /> -->
 
 					<div class="app-tasks" id="app-tomorrow-tasks-container" style="display: none;">
-						<h2 id="app-tomorrow-tasks" class="app-tasks-toggle">Tomorrow</h2>
+						<h2 id="app-tomorrow-tasks" class="app-tasks-toggle">Tomorrow&rsquo;s Tasks</h2>
 						<ul class="app-tasklist" data-tasks="2">
 							<li class="app-tasklist-item cf">
 								<label class="app-tasklist-label">
@@ -1109,7 +1123,7 @@
 					<!-- <hr /> -->
 
 					<div class="app-tasks" id="app-nextweek-tasks-container" style="display: none;">
-						<h2 id="app-later-tasks" class="app-tasks-toggle">Next Week</h2>
+						<h2 id="app-later-tasks" class="app-tasks-toggle">Next Week&rsquo;s Tasks</h2>
 						<ul class="app-tasklist" data-tasks="3">
 							<li class="app-tasklist-item cf">
 								<label class="app-tasklist-label">
