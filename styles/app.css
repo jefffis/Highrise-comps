@@ -380,6 +380,7 @@ hr {
 	/*max-width: 70px;*/
 	background: white url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-128.png) no-repeat calc(100% - 5px) 55%;
 	background-size: 12px;
+	margin-right: .5rem;
 	padding: .125em 1.5rem .125em .25rem;
 	border: 1px solid #ddd;
 	border-radius: 2px;
